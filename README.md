@@ -1,10 +1,8 @@
 # Bye
 
-`Bye`
+Bye removes the Rails methods `try` and `try!`.
 
-Bye removes the Rails method `try`.
-
-90% of `try` usage in Rails is either a flagrant Law of Demeter violation or more simply a betrayal of single responsibility.  Bye forces you to be confident in your code: using the null object pattern, better delegating of methods, or just fewer chained methods.
+90% of `try` usage in Rails is either a flagrant Law of Demeter violation or more simply a betrayal of single responsibility.  Bye forces you to be confident in your code: using the null object pattern, better delegating of methods, or just using fewer chained methods.
 
 ## Installation
 
@@ -29,12 +27,14 @@ Bye works without any extra setup.
 Without Bye:
 
 `User.first.posts.try(:collect, &:foo).try(:uniq).try(:sort)`
+
 => `nil`
 
 With Bye:
 `User.first.posts.try(:collect, &:foo).try(:uniq).try(:sort)`
 
 =>
+
 `NoMethodError: undefined method `try' for #<ActiveRecord::Associations::CollectionProxy []>`
 
 ## Contributing
