@@ -31,11 +31,10 @@ Without Bye:
 => `nil`
 
 With Bye:
+
 `User.first.posts.try(:collect, &:foo).try(:uniq).try(:sort)`
 
-=>
-
-NoMethodError: undefined method `try' for #<User:0x007f441b9e2140>
+=> `NoMethodError: undefined method `try' for #<ActiveRecord::Associations::CollectionProxy []>`
 
 ## Contributing
 
