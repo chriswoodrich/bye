@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["cwoodrich@gmail.com"]
 
   spec.summary       = %q{Remove `try` from your Rails Application}
-  spec.homepage      = "ODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/chriswoodrich/bye"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
