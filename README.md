@@ -35,7 +35,7 @@ With Bye:
 
 =>
 
-`NoMethodError: undefined method `try' for #<ActiveRecord::Associations::CollectionProxy []>`
+NoMethodError: undefined method `try' for #<User:0x007f441b9e2140>
 
 ## Contributing
 
