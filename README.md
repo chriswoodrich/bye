@@ -34,8 +34,10 @@ With Bye:
 
 `User.first.posts.try(:collect, &:foo).try(:uniq).try(:sort)`
 
-=> `NoMethodError: undefined method `try' for #<ActiveRecord::Associations::CollectionProxy []>`
-
+=>
+```
+NoMethodError: undefined method `try' for #<ActiveRecord::Associations::CollectionProxy []>
+```
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/chriswoodrich/bye.
